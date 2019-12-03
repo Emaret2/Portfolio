@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="../ArchCSS/index.css">
+    <title>Guestbook</title>
+
+    <!-- Favicon -->
+
+    <link rel="stylesheet" type="text/css"
+          href="styles/guestbook.css">
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Guestbook</h1>
+        <p class="lead">Welcome to the Guestbook!</p>
+        <a href="admin.php"> GuestBook Table</a>
+
+    </div>
+
+
+    <form id ="guestbookForm" action="guestbookConfirmation.php" method="post"> <!-- no action yet -->
+
+        <div class="form-group" id="formFirstName">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" name="firstName">
+        </div>
+        <div class="form-group" id="formLastName">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" name="lastName">
+        </div>
+
+        <div class="form-group" id="formCompany">
+            <label for="company">Company</label>
+            <input type="text" class="form-control" id="company" placeholder="" name="company">
+        </div>
+
+        <div class="form-group" id="formLinkedIn">
+            <label for="linkedIn">LinkedIn URL</label>
+            <input type="text" class="form-control" id="linkedIn" placeholder="" name="linkedIn">
+        </div>
+
+
+
+
+
+        <fieldset class="from-group">
+
+
+
+            <div class="form-group" id="formEmail">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" id="email" placeholder="" name="email">
+            </div>
+
+            <div class="form-check" id="formMailList">
+                <input class="form-check-input mp-2" type="checkbox" value="yes" id="mailList" name="mailList">
+                <label class="form-check-label mp-2" for="mailList">
+                    Please add me to your mailing list
+                </label>
+            </div>
+
+            <div id="emailFormat">
+                <label>Choose an email format:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="method" id="html" value="html">
+                    <label class="form-check-label" for="html">HTML</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="method" id="text" value="text">
+                    <label class="form-check-label" for="text">Text</label>
+                </div>
+            </div>
+
+
+        </fieldset>
+
+
+
+
+        <fieldset class="form-group">
+            <div class="form-group" id="formMeetMethod">
+                <select class="form-control" id="meetMethod" name="meetMethod">
+                    <option value="none">How did we meet?</option>
+                    <option value="word-of-mouth">Meetup</option>
+                    <option value="job-fair">Job Fair</option>
+                    <option value="unacquainted">We haven't</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-group" id="formMeetOther">
+                <label for="company">Other(Please Specify)</label>
+                <input type="text" class="form-control" id="meetOther" placeholder="" name="meetOther">
+            </div>
+
+            <div class="form-group" id ="commentBlock">
+                <label for="comment">Comments</label>
+                <textarea class="form-control" id="comment" rows="3" name="comment"></textarea>
+            </div>
+        </fieldset>
+
+        <button id="submit" type="submit" class="btn btn-primary">
+            Submit
+        </button>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/validation.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.err {
+    display: none
+}
+
+.invalid {
+    color: red;
+    border-bottom: 2px solid red;
+}
